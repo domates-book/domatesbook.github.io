@@ -181,18 +181,27 @@ You can think \(X\) as the number of apples and \(Y\) as the number of lemons so
 <p>We can expect the values of \(X\) and \(Y\) to have different scales. In order to compare \(X\) and \(Y\), we need to scale them by subtracting their mean, element-wise, so that they will be zero-centered. From a geometric point of view, in this mean-centering procedure, we re-position the coordinate system to make the origins coincide with the average point.</p>
 <p>This scaling will provide us the ability to  compare the parameters with respect to their direction in each dimension. In other words, we can expect components of \(X\) and \(Y\) to share the same signs when they behave similarly. These values and how they relate to the relationship between parameters can remind us the cosine function as we are investigating the degree of similarity between two vectors.</p>
 <p>Hmm, we are investigating the relationship between two vectors. Isn’t the dot product boost the similar components of the vectors? It can be helpful in our case.</p>
+<p align="center">
+  <img width="50%" height="50%" src="x_y_vector.png">
+</p>
+
 <p>From the dot product we know that:</p>
 <p>\[
-\overrightarrow{X}.\overrightarrow{Y} =\left | \overrightarrow{X}\right |. \left |\overrightarrow{Y} \right|.\cos{\theta}\]
+\overrightarrow{X}.\overrightarrow{Y} =\left | \overrightarrow{X}\right |. \left |\overrightarrow{Y} \right|.\cos{\alpha}\]
+
 Element-wise subtracting their means from the parameters will give us:
+<p align="center">
+  <img width="50%" height="50%" src="0_1_e.jpeg">
+</p>
 \[
 (\overrightarrow{X} - \overrightarrow{\mu_X}).(\overrightarrow{Y} - \overrightarrow{\mu_Y}) = \left | (\overrightarrow{X} - \overrightarrow{\mu_X}) \right |.  \left | (\overrightarrow{Y} - \overrightarrow{\mu_Y}) \right |.\cos{\theta}
 \]</p>
-<p>Finally, we have the cosine of the angle between \(X\) and \(Y\) as correlation 
+
+<p>Finally, we have the cosine of the angle between \(X_C\) and \(Y_C\) as correlation
 \[
-Corr(X,Y) =\cos{\theta} = \frac{(\overrightarrow{X} - \overrightarrow{\mu_X}).(\overrightarrow{Y} - \overrightarrow{\mu_Y})}{\left | (\overrightarrow{X} - \overrightarrow{\mu_X}) \right |. \left | (\overrightarrow{Y} - \overrightarrow{\mu_Y}) \right |}
+Corr(X_C,Y_C) =\cos{\theta} = \frac{(\overrightarrow{X} - \overrightarrow{\mu_X}).(\overrightarrow{Y} - \overrightarrow{\mu_Y})}{\left | (\overrightarrow{X} - \overrightarrow{\mu_X}) \right |. \left | (\overrightarrow{Y} - \overrightarrow{\mu_Y}) \right |}
 \]</p>
-<p>That’s it! Correlation is just the cosine of the angle between the random variables that we are investigating.
+<p>That’s it! Correlation is just the cosine of the angle between the mean-centered random variables that we are investigating.
 If the random variables are perpendicular to each other, they have nothing in common and the correlation between them would be
 \(\cos(90^{\circ}) = 0\). If they are in the same direction, they are highly correlated and it will give us \(\cos(0^{\circ}) = + 1\). If they point to the opposite directions, they are highly and negatively correlated as \(\cos(180^{\circ}) = -1.\)</p>
 <h2 id="license">License</h2>
