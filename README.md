@@ -3,7 +3,7 @@
 Some notes on mathematical intuition for the fundamental topics in data science and machine learning. You may use [this link](https://nbviewer.jupyter.org/github/domates-book/domates/blob/master/table-of-contents.ipynb) to access via nbviewer.
 
 <h2 id="license">License</h2>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Domates book by <a href="https://github.com/melodiCyb">Mine Melodi Caliskan </a> and <a href="https://github.com/EnginAlpman">Engin Deniz Alpman</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 All software application materials in this book is licensed under the following MIT License:
 
